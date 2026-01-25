@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Vatandoshlar Jamoat Fondi rasmiy veb-sayti">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./images/logo.png">
+<link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/libs/aos/main.min.css">
+<link rel="stylesheet" href="./assets/flatpickr/flatpickr.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="./assets/icomoon/style.css">
+<link rel="stylesheet" href="./css/main.min.css">
+<script src="./assets/libs/aos/main.min.js"></script>
+
+<title>Title</title>
+</head>
+
+<body>
+    <header class="header" role="banner">
+    <div class="container">
+        <a href="/" class="logo light" aria-label="Home">
+            <img src="../../images/logo.svg" alt="Logo" class="header-brand-img" />
+            <span>Milliy malaka <br> tizimini rivojlantirish <br> instituti</span>
+        </a>
+
+        <div class="header-top"></div>
+        <div class="header-content">
+            <div class="header-actions">
+                <div class="header-actions-action">
+                    <a href="#"><i class="i-maile"></i>info@mmtri.uz</a>
+                    <a href="#"><i class="i-phone"></i>+99855 516-54-53 (0)</a>
+                </div>
+                <div class="header-actions-divider">
+                    <div class="header-actions-divider-icons">
+                    <i class="i-instagram"></i>
+                    <i class="i-telegram"></i>
+                    <i class="i-facebook"></i>
+                    <i class="i-youtube"></i>
+                    </div>
+                    <div class="header-actions-divider-line"></div>
+                    <div class="header-actions-divider-search"><i class="i-search"></i></div>
+                    <div class="header-actions-divider-line"></div>
+                    <div class="header-actions-divider-user">
+                        <img src="../images/uzb.svg" alt="">
+                        <a href="">O’zbekcha</a>
+                        <i class="i-dropdown"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top2"></div>
+            <div class="header-main">
+                <nav class="header-main-nav">
+                    <a href="../../faq.html">Institut <i class="i-dropdown"></i></a>
+                    <a href="#">Faoliyat<i class="i-dropdown"></i></a>
+                    <a href="#">Xizmatlar</a>
+                    <a href="#">Tadbirlar<i class="i-dropdown"></i></a>
+                    <a href="#">Axborot Xizmati<i class="i-dropdown"></i></a>
+                </nav>
+                <button>Bog’lanish <i class="i-arrow"></i></button>
+            </div>
+        </div>
+
+        <button class="header__menu-btn " hidden type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false">
+            <span class="header__burger" aria-hidden="true"></span>
+        </button>
+    </div>
+</header>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu"
+    aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menyu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false"
+                    aria-controls="submenu1">
+                    Agentlik
+                    <i class="i-angle-bot"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu1">
+                    <li class="submenu-item">
+                        <a href="about.html" class="submenu-link">
+                            Biz haqimizda
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="leadership.html" class="submenu-link">
+                            Bizning Jamoa
+                        </a>
+                    </li>
+                    <li class="submenu-item submenu-item--dropdown">
+                        <span class="submenu-link" data-bs-toggle="collapse" data-bs-target="#submenu2"
+                            aria-expanded="false" aria-controls="submenu2">
+                            Regional Offices
+                            <i class="i-angle-right"></i>
+                        </span>
+                        <ul class="submenu collapse" id="submenu2">
+                            <li class="submenu-item">
+                                <a href="tashkent-office.html" class="submenu-link">
+                                    Tashkent Office
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="samarkand-office.html" class="submenu-link">
+                                    Samarkand Office
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="bukhara-office.html" class="submenu-link">
+                                    Bukhara Office
+                                </a>
+                            </li>
+                            <li class="submenu-item submenu-item--dropdown">
+                                <span class="submenu-link" data-bs-toggle="collapse" data-bs-target="#submenu3"
+                                    aria-expanded="false" aria-controls="submenu3">
+                                    Regional Offices
+                                    <i class="i-angle-right"></i>
+                                </span>
+                                <ul class="submenu collapse" id="submenu3">
+                                    <li class="submenu-item">
+                                        <a href="tashkent-office.html" class="submenu-link">
+                                            Tashkent Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="samarkand-office.html" class="submenu-link">
+                                            Samarkand Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="bukhara-office.html" class="submenu-link">
+                                            Bukhara Office
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="empty.html" class="menu-link">
+                    Bo'sh sahifa
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="list.html" class="menu-link">
+                    Ma'lumotlar bazasi
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="table.html" class="menu-link">
+                    Jadval
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="stats.html" class="menu-link">
+                    Expertlar statistikasi
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="news.html" class="menu-link">
+                    Yangiliklar
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="faq.html" class="menu-link">
+                    Faq
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="contacts.html" class="menu-link">
+                    Kontaktlar
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <div class="breadcrumbs">
+    <div class="container">
+        <div class="breadcrumbs-wrapper">
+            <h1 class="breadcrumbs__title">
+                Biz haqimizda
+            </h1>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__list--item">
+                    <a href="#" class="breadcrumbs__link">
+                        Asosiy
+                    </a>
+                </li>
+                <li class="breadcrumbs__list--item">
+                    <i class="i-dropdown"></i>
+                </li>
+                <li class="breadcrumbs__list--item">
+                    <a href="#" class="breadcrumbs__link">
+                        Biz Haqimizda 
+                    </a>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+    <div class="layout">
+        <div class="container">
+            <script src="./assets/js/imask.js"></script>
+
+<div class="contacts-page">
+    <div class="contacts-page__data">
+        <h2 class="contacts-page__data--title">Biz bilan bog'lanish uchun ariza shakli</h2>
+
+        <form class="contacts-page__data--form">
+            <div class="contacts-page__data--form-group">
+                <label>To‘liq ismingiz:</label>
+                <input class="form-control" type="text" placeholder="Kiriting" />
+            </div>
+
+            <div class="contacts-page__data--form-row">
+                <div class="contacts-page__data--form-group">
+                    <label>Telefon raqamingiz:</label>
+                    <input id="phone" class="form-control" type="text" />
+                </div>
+
+                <div class="contacts-page__data--form-group">
+                    <label>Elektron manzil:</label>
+                    <input class="form-control" type="email" placeholder="example@gmail.com" />
+                </div>
+            </div>
+
+            <div class="contacts-page__data--form-group">
+                <label>Xabar matni:</label>
+                <textarea class="form-control" placeholder="Kiriting"></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                <img src="./images/send.svg" alt="">
+                Yuborish
+            </button>
+        </form>
+    </div>
+    <div class="contacts-page__contact">
+        <h2 class="contacts-page__data--title">Kontakt ma'lumotlari</h2>
+        <div class="contacts-page__contact--info">
+            <a href="tel:+998712345678" class="contacts-page__contact--info-item">
+                <div class="contacts-page__contact--info-item-img">
+                    <div class="contacts-page__contact--info-item-img-circle">
+                        <img src="./images/contacts-1.svg">
+                    </div>
+                </div>
+                <div class="contacts-page__contact--info-item-numbers">
+                    <p>Telefon raqam:</p>
+                    <span>+998 71 234 56 78</span>
+                </div>
+            </a>
+            <a href="mailto:info@example.com" class="contacts-page__contact--info-item">
+                <div class="contacts-page__contact--info-item-img">
+                    <div class="contacts-page__contact--info-item-img-circle">
+                        <img src="./images/contacts-2.svg">
+                    </div>
+                </div>
+                <div class="contacts-page__contact--info-item-numbers">
+                    <p>Elektron manzil:</p>
+                    <span>info@example.com</span>
+                </div>
+            </a>
+            <div class="contacts-page__contact--info-item">
+                <div class="contacts-page__contact--info-item-img">
+                    <div class="contacts-page__contact--info-item-img-circle">
+                        <img src="./images/contacts-3.svg">
+                    </div>
+                </div>
+                <div class="contacts-page__contact--info-item-numbers">
+                    <p>Ish vaqti:</p>
+                    <span>Dushanba-Juma: 09:00 – 18:00</span>
+                </div>
+            </div>
+            <div class="contacts-page__contact--info-item">
+                <div class="contacts-page__contact--info-item-img">
+                    <div class="contacts-page__contact--info-item-img-circle">
+                        <img src="./images/contacts-4.svg">
+                    </div>
+                </div>
+                <div class="contacts-page__contact--info-item-numbers">
+                    <p>Manzil:</p>
+                    <span>O‘zbekiston, Toshkent shahri, Yakkasaroy tumani,
+                        Bobur ko‘chasi, 45-uy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.4925232956783!2d69.25348876967365!3d41.287755348207035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8aee77c2889f%3A0x1a0e4085e1b2ab8!2s77Q3%2B4M6%2C%20Babur%20Street%2045%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1766139483379!5m2!1sen!2s"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<script>
+    const input = document.querySelector('#phone');
+    IMask(input, {
+        mask: '+998 00-000-00-00',
+        lazy: false
+    });
+</script>
+        </div>
+    </div>
+    <div class="horizantal">
+    <div class="horizantal-img">
+        <img src="../images/raqam.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Telefon raqam</b>
+            <p>+998 (55) 516 54 53</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/elektronpochta.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Elektron pochta</b>
+            <p>info@mmtri.uz</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/lokation.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Manzil</b>
+            <p>Olmozor tumani, Talabar ko’chasi 12-uy</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/calendar.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Ish vaqti</b>
+            <p>Dush - Jum 09:00 - 18:00</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-item">
+            <div class="footer-logo">
+                <img src="../images/footer-logo.svg" alt="">
+                <h3>Ijtimoiy tarmoqlar</h3>
+                <div class="footer-logo-links">
+                    <a href="#"><i class="i-instagram"></i>Instagram</a>
+                    <a href="#"><i class="i-telegram"></i>Instagram</a>
+                    <a href="#"><i class="i-facebook"></i>Instagram</a>
+                    <a href="#"><i class="i-instagram"></i>Instagram</a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <h3>Xizmatlar</h3>
+                <a href="#">Akkreditatsiyadan o’tkazish</a>
+                <a href="#">Malaka oshirish kurslari</a>
+                <a href="#">Hujjatlar expertizasi</a>
+            </div>
+            <div class="footer-text">
+                <h3>Biz Haqimizda</h3>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Ichki hujjatlar</a>
+                <a href="#">Nashrlar</a>
+                <a href="#">Xalqaro hamkorlik</a>
+                <a href="#">Koruppsiyaga qarshi kurashish</a>
+                <a href="#">Bo’sh ish o’rinlari</a>
+            </div>
+            <div class="footer-text">
+                <h3>Biz Tadbirlar</h3>
+                <a href="#">Konferensiyalar</a>
+                <a href="#">Seminar - Treninglar</a>
+                <a href="#">Uchrashuvlar</a>
+            </div>
+            <div class="footer-text">
+                <h3>Axborot xizmati</h3>
+                <a href="#">Yangliklar </a>
+                <a href="#">E’lonlar</a>
+                <a href="#">Ochiq ma’lumotlar </a>
+                <a href="#">Media </a>
+                <a href="#">Matbuot anjumanlari</a>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-end">
+            <a href="#">© 2025 Milliy malaka tizimini rivojlantirish instituti. Barcha huquqlar himoyalangan.</a>
+            <a href="#">
+                <span>Developed by:</span>
+                <img src="../images/proend.svg" alt="">
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+
+</html>

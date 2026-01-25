@@ -1,0 +1,130 @@
+.lider {
+  &-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    background-image: url("../../images/tuzilmalar-img.png");
+    background-repeat: no-repeat;
+    // background-size: 80px;
+    background-position: right 16px top 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    img {
+        padding: 16px;
+    }
+    &-text {
+        padding:30px 16px 30px 0px; 
+        p {
+            color: #145FCB;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 9px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            span {
+                width: 4px;
+                height: 25px;
+                background-color: #145FCB;
+                border-radius: 26px;
+            }
+        }
+        h4 {
+            color: #000000;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 60px;
+        }
+        &-link {
+            display: flex;
+            align-items: center;
+            gap: 33px;
+            margin-bottom: 25px;
+            a {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                color: #121926;
+                font-size: 16px;
+                font-weight: 500;
+                i {
+                    color: #145FCB;
+                    font-size: 24px;
+                }
+            }
+        }
+        &-top {
+            width: 100%;
+            height: 0.5px ;
+            background-color: #E3E8EF;
+            margin-bottom: 25px;
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &-btn1 {
+                width: 130px;
+                border: 1px solid #145FCB;
+                background-color: #F5F9FF;
+                color: #145FCB;
+                font-size: 16px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 9px;
+                border-radius: 12px;
+                gap: 8px;
+                i {
+                    color: #0071DC;
+                    font-size: 20px;
+                }
+            }
+
+            &-btn2 {
+                width: 150px;
+                border: 1px solid #145FCB;
+                background-color: #F5F9FF;
+                color: #145FCB;
+                font-size: 16px;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 9px;
+                border-radius: 12px;
+                gap: 8px;
+                i {
+                    color: #0071DC;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+  }
+
+  &-left {
+    background-color: #ffffff;
+    border-radius: 16px;
+    background-image: url("../../images/tuzilmalar-img.png");
+    background-repeat: no-repeat;
+    background-position: right 16px top 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 30px;
+    &-img {
+        display: flex;
+        align-items: center;
+        &-gerb {
+           transform: translateX(-35px);
+        }
+        &-shef {
+            border-radius: 16px 0px 0px 16px;
+        }
+    }
+  }
+}

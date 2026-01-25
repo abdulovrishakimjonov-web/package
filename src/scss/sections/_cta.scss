@@ -1,0 +1,31 @@
+.cta {
+    background-color: #145FCB;
+    margin-bottom: 130px;
+    background-image: url("../../images/karta.png");
+    padding: 25px;
+    &-card {
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        width: 411px;
+        padding: 14px;
+        &-card1 {
+            display: flex;
+            gap: 15px;
+            &-text {
+                p {
+                    color: #000000;
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                }
+                a {
+                    width: 290px;
+                    color: #145FCB;
+                    background-color: #F0F6FF;
+                    padding: 7px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

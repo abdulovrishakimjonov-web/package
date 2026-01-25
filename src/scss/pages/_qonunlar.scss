@@ -1,0 +1,43 @@
+.qonunlar {
+    padding: 30px;
+    border-radius: 16px;
+    background-color: #ffffff;
+    .top {
+        width: 100%;
+        height: 1px;
+        background-color: #E3E8EF;
+        margin-bottom: 16px;
+    }
+    &-nomi {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        h3 {
+            color: #121926;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        p {
+            color: #364152;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        button {
+            width: 151px;
+            border-radius: 12px;
+            border: 1px solid #145FCB;
+            color: #145FCB;
+            background-color: #F5F9FF;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+    }
+}

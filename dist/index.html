@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Vatandoshlar Jamoat Fondi rasmiy veb-sayti">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="./images/logo.png">
+<link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/libs/aos/main.min.css">
+<link rel="stylesheet" href="./assets/flatpickr/flatpickr.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/libs/owl-carousel/owl.theme.default.min.css">
+<link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+<link rel="stylesheet" href="./assets/icomoon/style.css">
+<link rel="stylesheet" href="./css/main.min.css">
+<script src="./assets/libs/aos/main.min.js"></script>
+
+<title>Title</title>
+</head>
+
+<body class="index">
+    <header class="header" role="banner">
+    <div class="container">
+        <a href="/" class="logo light" aria-label="Home">
+            <img src="../../images/logo.svg" alt="Logo" class="header-brand-img" />
+            <span>Milliy malaka <br> tizimini rivojlantirish <br> instituti</span>
+        </a>
+
+        <div class="header-top"></div>
+        <div class="header-content">
+            <div class="header-actions">
+                <div class="header-actions-action">
+                    <a href="#"><i class="i-maile"></i>info@mmtri.uz</a>
+                    <a href="#"><i class="i-phone"></i>+99855 516-54-53 (0)</a>
+                </div>
+                <div class="header-actions-divider">
+                    <div class="header-actions-divider-icons">
+                    <i class="i-instagram"></i>
+                    <i class="i-telegram"></i>
+                    <i class="i-facebook"></i>
+                    <i class="i-youtube"></i>
+                    </div>
+                    <div class="header-actions-divider-line"></div>
+                    <div class="header-actions-divider-search"><i class="i-search"></i></div>
+                    <div class="header-actions-divider-line"></div>
+                    <div class="header-actions-divider-user">
+                        <img src="../images/uzb.svg" alt="">
+                        <a href="">O’zbekcha</a>
+                        <i class="i-dropdown"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="top2"></div>
+            <div class="header-main">
+                <nav class="header-main-nav">
+                    <a href="../../faq.html">Institut <i class="i-dropdown"></i></a>
+                    <a href="#">Faoliyat<i class="i-dropdown"></i></a>
+                    <a href="#">Xizmatlar</a>
+                    <a href="#">Tadbirlar<i class="i-dropdown"></i></a>
+                    <a href="#">Axborot Xizmati<i class="i-dropdown"></i></a>
+                </nav>
+                <button>Bog’lanish <i class="i-arrow"></i></button>
+            </div>
+        </div>
+
+        <button class="header__menu-btn " hidden type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false">
+            <span class="header__burger" aria-hidden="true"></span>
+        </button>
+    </div>
+</header>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasMenu"
+    aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menyu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="menu">
+            <li class="menu-item menu-item--dropdown">
+                <span class="menu-link" data-bs-toggle="collapse" data-bs-target="#submenu1" aria-expanded="false"
+                    aria-controls="submenu1">
+                    Agentlik
+                    <i class="i-angle-bot"></i>
+                </span>
+                <ul class="submenu collapse" id="submenu1">
+                    <li class="submenu-item">
+                        <a href="about.html" class="submenu-link">
+                            Biz haqimizda
+                        </a>
+                    </li>
+                    <li class="submenu-item">
+                        <a href="leadership.html" class="submenu-link">
+                            Bizning Jamoa
+                        </a>
+                    </li>
+                    <li class="submenu-item submenu-item--dropdown">
+                        <span class="submenu-link" data-bs-toggle="collapse" data-bs-target="#submenu2"
+                            aria-expanded="false" aria-controls="submenu2">
+                            Regional Offices
+                            <i class="i-angle-right"></i>
+                        </span>
+                        <ul class="submenu collapse" id="submenu2">
+                            <li class="submenu-item">
+                                <a href="tashkent-office.html" class="submenu-link">
+                                    Tashkent Office
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="samarkand-office.html" class="submenu-link">
+                                    Samarkand Office
+                                </a>
+                            </li>
+                            <li class="submenu-item">
+                                <a href="bukhara-office.html" class="submenu-link">
+                                    Bukhara Office
+                                </a>
+                            </li>
+                            <li class="submenu-item submenu-item--dropdown">
+                                <span class="submenu-link" data-bs-toggle="collapse" data-bs-target="#submenu3"
+                                    aria-expanded="false" aria-controls="submenu3">
+                                    Regional Offices
+                                    <i class="i-angle-right"></i>
+                                </span>
+                                <ul class="submenu collapse" id="submenu3">
+                                    <li class="submenu-item">
+                                        <a href="tashkent-office.html" class="submenu-link">
+                                            Tashkent Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="samarkand-office.html" class="submenu-link">
+                                            Samarkand Office
+                                        </a>
+                                    </li>
+                                    <li class="submenu-item">
+                                        <a href="bukhara-office.html" class="submenu-link">
+                                            Bukhara Office
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a href="empty.html" class="menu-link">
+                    Bo'sh sahifa
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="list.html" class="menu-link">
+                    Ma'lumotlar bazasi
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="table.html" class="menu-link">
+                    Jadval
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="stats.html" class="menu-link">
+                    Expertlar statistikasi
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="news.html" class="menu-link">
+                    Yangiliklar
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="faq.html" class="menu-link">
+                    Faq
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="contacts.html" class="menu-link">
+                    Kontaktlar
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <section class="hero-wraper">
+    <div class="hero-wraper-img">
+        <img src="../../images/Group.png" alt="">
+        
+    </div>
+<div class="hero-wraper-img-top">
+            <p><i class="i-calendar"></i>16 Dekabr 2025</p>
+            <h2>Milliy malaka tizimining joriy holati va uni <br> rivojlantirish bo‘yicha istiqbolli vazifalar</h2>
+            <h5>Turin shahri bugungi kunda Markaziy Osiyo davlatlari uchun muhim muloqot va hamkorlik <br> maydoniga aylangan...</h5>
+            <button>Batafsil o‘qish <i class="i-arrow"></i></button>
+        </div>
+</section>
+    <section class="about">
+    <div class="container">
+        <h2 class="about-text">Biz Haqimizda</h2>
+        <div class="about-main">
+            <div class="about-main-image">
+                <img src="../../images/about-img-1.png" alt="" class="large-image">
+                <img src="../../images/about-img-2.png" alt="" class="small-image">
+                <img src="../../images/about-img-3.png" alt="" class="small-image">
+            </div>
+            <div class="about-main-vertical">
+                <h3>Milliy malaka tizimini rivojlantirish instituti</h3>
+                <p class="about-main-vertical-p">Institut – O‘zbekiston Respublikasi Prezidentining 2024-yil
+                    30-sentabrda  qabul qilingan “O‘zbekiston Respublikasi milliy malaka tizimini yanada
+                    takomillashtirish chora-tadbirlari to‘g‘risida”gi PQ-345-sonli Qarori  asosida tashkil etilgan.</p>
+                <button>Batafsil <i class="i-arrow"></i></button>
+                <div class="about-main-vertical-horizantal">
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/list.svg" alt="" class="img1">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/handshake.svg" alt="" class="img2">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/file.svg" alt="" class="img3">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/money.svg" alt="" class="img4">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/users.svg" alt="" class="img5">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    <div class="about-main-vertical-horizantal-qoshimcha">
+                        <div class="about-main-vertical-horizantal-qoshimcha-rait">
+                            <img src="../../images/globe.svg" alt="" class="img6">
+                            <p>Faoliyat yo'nalishlari va <br> vazifalar</p>
+                        </div>
+                        <i class="i-arrow-right"></i>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section class="croup">
+    <div class="container">
+        <div class="croup-text">
+            <h2>Malaka oshirish kurslari</h2>
+            <button>Batafsil <i class="i-arrow"></i></button>
+        </div>
+        <div class="croup-main">
+        <div class="croup-main-card">
+            <p><img src="../../images/croup-img-1.svg" alt="">Talabgorlarga</p>
+            <div class="croup-main-card-top"></div>
+            <h5>Platforma orqali malakani baholash <br> markazlari, malaka sertifikatlari, <br> mashg'ulotlar klassifikatori,</h5>
+        </div>
+
+        <div class="croup-main-card">
+            <p><img src="../../images/croup-img-1.svg" alt="">Talabgorlarga</p>
+            <div class="croup-main-card-top"></div>
+            <h5>Platforma orqali malakani baholash <br> markazlari, malaka sertifikatlari, <br> mashg'ulotlar klassifikatori,</h5>
+        </div>
+
+        <div class="croup-main-card">
+            <p><img src="../../images/croup-img-1.svg" alt="">Talabgorlarga</p>
+            <div class="croup-main-card-top"></div>
+            <h5>Platforma orqali malakani baholash <br> markazlari, malaka sertifikatlari, <br> mashg'ulotlar klassifikatori,</h5>
+        </div>
+        
+        <div class="croup-main-card">
+            <p><img src="../../images/croup-img-1.svg" alt="">Talabgorlarga</p>
+            <div class="croup-main-card-top"></div>
+            <h5>Platforma orqali malakani baholash <br> markazlari, malaka sertifikatlari, <br> mashg'ulotlar klassifikatori,</h5>
+        </div>
+        </div>
+    </div>
+</section>
+    <section class="news">
+    <div class="container">
+        <div class="news-text">
+            <h2>Yangiliklar</h2>
+            <button>Batafsil <i class="i-arrow"></i></button>
+        </div>
+        <div class="news-main">
+            <!-- Large Card -->
+            <div class="news-main-card news-main-card--large">
+                <img src="../../images/news-img-1.png" alt="">
+                <div class="news-main-card__overlay">
+                    <div class="news-main-card__meta">
+                        <span class="news-main-card__date">
+                            <i class="i-calendar"></i> 13 Dekabr 2025
+                        </span>
+                        <span class="news-main-card__views">
+                            <i class="i-eye"></i> 325
+                        </span>
+                    </div>
+                        <h3 class="news-main-card__title">
+                        Samarqand viloyati sessiyasida tashkiliy masala ko'rilib, kelgusi vazifalar belgilandi
+                    </h3>
+                    <p class="news-main-card__text">
+                        25-noyabr kuni Xalq deputatlari Samarqand viloyat kengashining navbatdan tashqari sessiyasi
+                        bo'lib o'tdi. Unda O'zbekiston Respublikasi Prezidenti Shavkat Mirziyoyev ishtirok etdi...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Small Cards Grid -->
+            <div class="news-main-grid">
+                <!-- Card 1 -->
+                <div class="news-main-card news-main-card--small">
+                    <img src="../../images/news-img-2.png" alt="">
+                    <div class="news-main-card__overlay">
+                        <div class="news-main-card__meta">
+                            <span class="news-main-card__date">
+                                <i class="i-calendar"></i> 13 Dekabr 2025
+                            </span>
+                            <span class="news-main-card__views">
+                                <i class="i-eye"></i> 325
+                            </span>
+                        </div>
+                        <h3 class="news-main-card__title">
+                            O'zbekistonning xalqaro aloqalari kengaymoqda.
+                        </h3>
+                        <p class="news-main-card__text">
+                            Samarqandda xalqaro ta'lim forumlari o'tkazilishi rejalashtiririlmoqda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="news-main-card news-main-card--small">
+                    <img src="../../images/news-img-3.png" alt="">
+                    <div class="news-main-card__overlay">
+                        <div class="news-main-card__meta">
+                            <span class="news-main-card__date">
+                                <i class="i-calendar"></i> 13 Dekabr 2025
+                            </span>
+                            <span class="news-main-card__views">
+                                <i class="i-eye"></i> 325
+                            </span>
+                        </div>
+                        <h3 class="news-main-card__title">
+                            O'zbekistonning xalqaro aloqalari kengaymoqda.
+                        </h3>
+                        <p class="news-main-card__text">
+                            Samarqandda xalqaro ta'lim forumlari o'tkazilishi rejalashtiririlmoqda.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="news-main-card news-main-card--small">
+                    <img src="../../images/news-img-4.png" alt="">
+                    <div class="news-main-card__overlay">
+                        <div class="news-main-card__meta">
+                            <span class="news-main-card__date">
+                                <i class="i-calendar"></i> 13 Dekabr 2025
+                            </span>
+                            <span class="news-main-card__views">
+                                <i class="i-eye"></i> 325
+                            </span>
+                        </div>
+                        <h3 class="news-main-card__title">
+                            O'zbekiston ta'limida xalqaro standartlarga o'tish jarayoni.
+                        </h3>
+                        <p class="news-main-card__text">
+                            2024-yilda yangi diplom dasturlari joriy etiladi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="news-main-card news-main-card--small">
+                    <img src="../../images/news-img-5.png" alt="">
+                    <div class="news-main-card__overlay">
+                        <div class="news-main-card__meta">
+                            <span class="news-main-card__date">
+                                <i class="i-calendar"></i> 13 Dekabr 2025
+                            </span>
+                            <span class="news-main-card__views">
+                                <i class="i-eye"></i> 325
+                            </span>
+                        </div>
+                        <h3 class="news-main-card__title">
+                            O'zbekiston diplomlari endlikda 38 ta davlatda tan olinishi mumkin.
+                        </h3>
+                        <p class="news-main-card__text">
+                            25-noyabr kuni Xalq deputatlari Samarqand viloyat...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="portfolio">
+    <div class="container">
+        <div class="portfolio-wrapper">
+            <!-- Left Side - Intraktiv Xizmatlar -->
+            <div class="portfolio-left">
+                <div class="portfolio-left__header">
+                    <h2>Intraktiv Xizmatlar</h2>
+                    <button class="portfolio-btn">Batafsil <i class="i-arrow"></i></button>
+                </div>
+                <div class="portfolio-left__cards">
+                    <!-- Card 1 -->
+                    <div class="portfolio-card portfolio-card--purple">
+                        <div class="portfolio-card__icon">
+                            <img src="../../images/Vector .svg" alt="">
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3>Akkreditatsiyadan o'tkazish</h3>
+                            <p>Taʼlim boʻyicha konsultatsiya olish, akkreditatsiyadan oʻtkazish boʻyicha davlat xizmati.</p>
+                        </div>
+                        <div class="portfolio-card__play">
+                            <img src="../../images/Vector .svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="portfolio-card portfolio-card--blue">
+                        <div class="portfolio-card__icon">
+                            <img src="../../images/Vector-2.svg" alt="">
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3>Malaka oshirish kurslari</h3>
+                            <p>Turli yo'nalishlarda Ekspertlarga, Muallimlarga boʻlish maqsadida alar finome asosida ishtitut tomonidan.</p>
+                        </div>
+                        <div class="portfolio-card__play">
+                            <img src="../../images/Vector-2.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="portfolio-card portfolio-card--cyan">
+                        <div class="portfolio-card__icon">
+                            <img src="../../images/Vector-3.svg" alt="">
+                        </div>
+                        <div class="portfolio-card__content">
+                            <h3>Mujatlar ekspertizasi</h3>
+                            <p>Turli yo'nalishlarda kasbliy standartlar va boʻlolada bioticha ekspertlarin oʻtkazish.</p>
+                        </div>
+                        <div class="portfolio-card__play">
+                            <img src="../../images/Vector-3.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Ko'p beriladigan savollar -->
+            <div class="portfolio-right">
+                <div class="portfolio-right__header">
+                    <h2>Ko'p beriladigan savollar</h2>
+                    <button class="portfolio-btn">Batafsil <i class="i-arrow"></i></button>
+                </div>
+                <div class="portfolio-right__accordion">
+                  <button>Baholovchi ekspert kim? <span>+</span></button>
+                  <button>Malakani boholash markazlarini akkreditatsiya o’tkazish jarayoni? <span>+</span></button>
+                  <button>Milliy malaka tizimi nima <span>+</span></button>
+                  <button>Hayot davmida ta’lim nima <span>+</span></button>
+                  <button>Hayot davmida ta’lim nima <span>+</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+    <section class="cta">
+    <h2>Foydali havolalar</h2>
+    <div class="owl-carousel">
+        <div class="cta-card">
+            <div class="cta-card-card1">
+                <img src="../../images/dawun.svg" alt="">
+                <div class="cta-card-card1-text">
+                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
+                    </p>
+                    <a href="#">http://ombudsman</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-card">
+            <div class="cta-card-card1">
+                <img src="../../images/dawun.svg" alt="">
+                <div class="cta-card-card1-text">
+                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
+                    </p>
+                    <a href="#">http://ombudsman</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-card">
+            <div class="cta-card-card1">
+                <img src="../../images/dawun.svg" alt="">
+                <div class="cta-card-card1-text">
+                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
+                    </p>
+                    <a href="#">http://ombudsman</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-card">
+            <div class="cta-card-card1">
+                <img src="../../images/dawun.svg" alt="">
+                <div class="cta-card-card1-text">
+                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
+                    </p>
+                    <a href="#">http://ombudsman</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-card">
+            <div class="cta-card-card1">
+                <img src="../../images/dawun.svg" alt="">
+                <div class="cta-card-card1-text">
+                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
+                    </p>
+                    <a href="#">http://ombudsman</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 6,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    </script>
+</section>
+    <div>
+        <div class="container">
+            
+            
+        </div>
+    </div>
+    
+    <div class="horizantal">
+    <div class="horizantal-img">
+        <img src="../images/raqam.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Telefon raqam</b>
+            <p>+998 (55) 516 54 53</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/elektronpochta.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Elektron pochta</b>
+            <p>info@mmtri.uz</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/lokation.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Manzil</b>
+            <p>Olmozor tumani, Talabar ko’chasi 12-uy</p>
+        </div>
+    </div>
+    <div class="horizantal-img">
+        <img src="../images/calendar.svg" alt="">
+        <div class="horizantal-img-text">
+            <b>Ish vaqti</b>
+            <p>Dush - Jum 09:00 - 18:00</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-item">
+            <div class="footer-logo">
+                <img src="../images/footer-logo.svg" alt="">
+                <h3>Ijtimoiy tarmoqlar</h3>
+                <div class="footer-logo-links">
+                    <a href="#"><i class="i-instagram"></i>Instagram</a>
+                    <a href="#"><i class="i-telegram"></i>Instagram</a>
+                    <a href="#"><i class="i-facebook"></i>Instagram</a>
+                    <a href="#"><i class="i-instagram"></i>Instagram</a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <h3>Xizmatlar</h3>
+                <a href="#">Akkreditatsiyadan o’tkazish</a>
+                <a href="#">Malaka oshirish kurslari</a>
+                <a href="#">Hujjatlar expertizasi</a>
+            </div>
+            <div class="footer-text">
+                <h3>Biz Haqimizda</h3>
+                <a href="#">Biz haqimizda</a>
+                <a href="#">Ichki hujjatlar</a>
+                <a href="#">Nashrlar</a>
+                <a href="#">Xalqaro hamkorlik</a>
+                <a href="#">Koruppsiyaga qarshi kurashish</a>
+                <a href="#">Bo’sh ish o’rinlari</a>
+            </div>
+            <div class="footer-text">
+                <h3>Biz Tadbirlar</h3>
+                <a href="#">Konferensiyalar</a>
+                <a href="#">Seminar - Treninglar</a>
+                <a href="#">Uchrashuvlar</a>
+            </div>
+            <div class="footer-text">
+                <h3>Axborot xizmati</h3>
+                <a href="#">Yangliklar </a>
+                <a href="#">E’lonlar</a>
+                <a href="#">Ochiq ma’lumotlar </a>
+                <a href="#">Media </a>
+                <a href="#">Matbuot anjumanlari</a>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-end">
+            <a href="#">© 2025 Milliy malaka tizimini rivojlantirish instituti. Barcha huquqlar himoyalangan.</a>
+            <a href="#">
+                <span>Developed by:</span>
+                <img src="../images/proend.svg" alt="">
+            </a>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const header = document.querySelector('.header');
+        if (!header) return;
+
+        function onScroll() {
+            header.classList.toggle('light', window.scrollY <= 600);
+        }
+
+        onScroll();
+        window.addEventListener('scroll', onScroll);
+    });
+
+</script>
+
+</html>

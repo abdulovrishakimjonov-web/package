@@ -1,0 +1,22 @@
+.xizmatlar {
+  &-card {
+    width: 529px;
+    border-radius: 16px;
+    padding: 16px;
+    background: linear-gradient(to right, #6172f3, #8098f9);
+    &-vector {
+        position: relative;
+        background-color: #ffffff;
+        opacity: 0.2;
+        border-radius: 12px;
+        padding: 16px;
+        width: 110px;
+       
+        img {
+ z-index: 1;
+ position: absolute;
+
+        }
+    }
+  }
+}

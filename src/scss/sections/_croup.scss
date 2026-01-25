@@ -1,0 +1,81 @@
+ .croup {
+    padding: 25px 0px;
+    background-color: #013A89;
+    background-image: url("../../images/backrount.png");
+    &-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        h2 {
+            color: #FFFFFF;
+            font-size: 36px;
+            font-weight: 700;
+        }
+        button {
+            width: 118px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #145FCB;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            padding: 10px;
+            background-color: #ffffff;
+            cursor: pointer;
+            i {
+                font-size: 20px;
+            }
+        }
+    }  
+&-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+   &-card {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  width: 393px;
+  border-radius: 16px;
+  background-color: #ffffff;
+
+  background-image: url("../../images/croup-img.png");
+  background-repeat: no-repeat;
+  background-size: 100px; // rasm kattaligi
+  background-position: right -40px center; // o‘ng tomonga chiqib tursin
+
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    color: #121926;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  &-top {
+    width: 100%;
+    height: 0.5px;
+    background-color: #ECF4FF;
+    margin-bottom: 16px;
+  }
+
+  h5 {
+    color: #364152;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+}
+
+}
