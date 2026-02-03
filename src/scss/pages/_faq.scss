@@ -41,67 +41,105 @@
       }
     }
   }
-  &-text {
+  .faq-text {
     background-color: #ffffff;
     border-radius: 16px;
     padding: 16px;
     margin-bottom: 16px;
-    &-list {
-      list-style: none;
-      padding-left: 20px;
-      margin: 0;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
       color: #1f2937;
-      li {
-        font-size: 16px;
-        font-weight: 500;
-        color: #364152;
-        margin-bottom: 8px;
-      }
+      margin-bottom: 24px;
     }
 
     &-card {
       display: flex;
-      align-items: center;
+      justify-content: space-between; 
       gap: 16px;
+
       &-card1 {
-        width: 231px;
-        height: 255px;
-        padding: 20px 16px;
+        position: relative; 
+        width: 235px;
+        height: 280px;
+        padding: 30px 20px;
         border: 1px solid #e3e8ef;
         border-radius: 12px;
         background-color: #ffffff;
-
-        background-image: url("../../images/naqish.svg");
-        background-repeat: no-repeat;
-        background-position: top left;
-        background-size: 97px;
-
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        overflow: hidden; // Naqshlar chetdan chiqib ketmasligi uchun
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        // Chap tepada naqsh
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 80px;
+          height: 80px;
+          background-image: url("../../images/naqish.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          opacity: 0.4;
+        }
+
+        // O'ng pastda naqsh
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          right: -10px;
+          width: 80px;
+          height: 80px;
+          background-image: url("../../images/naqish.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          transform: rotate(180deg); // Naqshni teskari qilish
+          opacity: 0.4;
+        }
 
         img {
-          width: 48px;
-          height: 48px;
-          padding: 12px;
+          width: 56px;
+          height: 56px;
+          padding: 14px;
           border-radius: 50%;
-          background-color: #2563eb;
-          margin-bottom: 16px;
+          background-color: #145fcb; // Rasmga mos ko'k rang
+          margin-bottom: 20px;
+          z-index: 2; // Naqsh ustida turishi uchun
+        }
+
+        .line-blue {
+          width: 80%;
+          height: 2px;
+          background-color: #145fcb;
+          margin-bottom: 15px;
+          opacity: 0.8;
         }
 
         b {
-          font-size: 20px;
-          font-weight: 600;
-          color: #000000;
-          margin-bottom: 8px;
+          font-size: 18px;
+          font-weight: 700;
+          color: #111827;
+          margin-bottom: 10px;
+          z-index: 2;
         }
 
         p {
-          font-size: 16px;
-          font-weight: 500;
-          color: #364152;
-          line-height: 1.4;
+          font-size: 14px;
+          font-weight: 400;
+          color: #4b5563;
+          line-height: 1.5;
+          z-index: 2;
         }
       }
     }

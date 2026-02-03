@@ -1,16 +1,56 @@
-<section class="nashirlar">
-    <h2>Tarmoq malaka ramkasini ishlab chiqish va yangilash metodologiyasi</h2>
-    <div class="nashirlar-top"></div>
-    <div class="nashirlar-button">
-        <div class="nashirlar-button-birlik">
-            <button class="nashirlar-button-birlik-button1"><i class="i-calendar"></i>18 dekabr 2025</button>
-            <button class="nashirlar-button-birlik-button2"><i class="i-eye"></i>126</button>
-            <button class="nashirlar-button-birlik-button3">4</button>
+<section class="news-grid">
+    <div class="news-card" onclick="openNews('news-1')">
+        <div class="news-img">
+            <img src="../../images/news-1.png" alt="">
+            <div class="news-overlay">
+                <p>TARMOQ MALAKA RAMKASINI ISHLAB CHIQISH VA YANGILASH METODOLOGIYASI</p>
+            </div>
         </div>
-        <div class="nashirlar-button-rait">
-            <button>Chop etish</button>
-            <button>Yuklab olish</button>
+        <div class="news-body">
+            <h4>Italiyaning Turin shahrida “Markaziy Osiyoda kasbiy va malaka...</h4>
+            <p>Turin shahri bugungi kunda Markaziy Osiyo davlatlari uchun muhim muloqot maydoniga aylangan...</p>
+            <div class="news-footer">
+                <span><i class="i-calendar"></i> 13 Dekabr 2025</span>
+                <span><i class="i-eye"></i> 234</span>
+            </div>
         </div>
     </div>
-    <img src="../../images/nashirlar.png" alt="">
-</section>
+    </section>
+
+<div id="news-detail-page" class="news-detail" style="display: none;">
+    <button onclick="closeNews()" class="back-btn">⬅ Orqaga qaytish</button>
+    
+    <div class="detail-header">
+        <h2 id="detail-title">Tarmoq malaka ramkasini ishlab chiqish va yangilash metodologiyasi</h2>
+        <div class="detail-meta">
+            <span><i class="i-calendar"></i> 18 Dekabr 2025</span>
+            <span><i class="i-eye"></i> 126</span>
+            <span><i class="i-comment"></i> 4</span>
+            <div class="detail-actions">
+                <button><i class="i-print"></i> Chop etish</button>
+                <button class="download"><i class="i-download"></i> Yuklab olish</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="detail-content">
+        <img id="detail-img" src="../../images/news-1.png" alt="">
+        <div class="detail-text">
+            <p>Batafsil ma'lumotlar matni shu yerda aks etadi...</p>
+        </div>
+    </div>
+</div>
+
+
+<script>function openNews(newsId) {
+    document.querySelector('.news-grid').style.display = 'none';
+    const detailPage = document.getElementById('news-detail-page');
+    detailPage.style.display = 'block';
+    
+    window.scrollTo(0, 0); 
+}
+
+function closeNews() {
+    document.querySelector('.news-grid').style.display = 'grid';
+    document.getElementById('news-detail-page').style.display = 'none';
+}</script>

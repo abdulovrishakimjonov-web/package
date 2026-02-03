@@ -484,82 +484,103 @@
     </div>
 </section>  
     <section class="cta">
-    <h2>Foydali havolalar</h2>
-    <div class="owl-carousel">
-        <div class="cta-card">
-            <div class="cta-card-card1">
-                <img src="../../images/dawun.svg" alt="">
-                <div class="cta-card-card1-text">
-                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
-                    </p>
-                    <a href="#">http://ombudsman</a>
+    <div class="container">
+        <h2>Foydali havolalar</h2>
+        <div class="ovul owl-carousel owl-theme">
+            
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <img src="../../images/prezident.svg" alt="logo">
+                    <div class="cta-card-text">
+                        <p>O'zbekiston Respublikasi Prezidentining rasmiy veb-sayti</p>
+                        <a href="http://www.president.uz">http://www.president.uz</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="cta-card">
-            <div class="cta-card-card1">
-                <img src="../../images/dawun.svg" alt="">
-                <div class="cta-card-card1-text">
-                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
-                    </p>
-                    <a href="#">http://ombudsman</a>
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <img src="../../images/ombudsman.svg" alt="logo">
+                    <div class="cta-card-text">
+                        <p>O'zbekiston Respublikasi Oliy Majlisining Inson huquqlari bo'yicha vakili (Ombudsman)</p>
+                        <a href="http://ombudsman.uz">http://ombudsman.uz</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="cta-card">
-            <div class="cta-card-card1">
-                <img src="../../images/dawun.svg" alt="">
-                <div class="cta-card-card1-text">
-                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
-                    </p>
-                    <a href="#">http://ombudsman</a>
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <img src="../../images/regulation.svg" alt="logo">
+                    <div class="cta-card-text">
+                        <p>Normativ-huquqiy hujjatlar loyihalarini muhokama qilish portali</p>
+                        <a href="http://regulation.gov.uz">http://regulation.gov.uz</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="cta-card">
-            <div class="cta-card-card1">
-                <img src="../../images/dawun.svg" alt="">
-                <div class="cta-card-card1-text">
-                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
-                    </p>
-                    <a href="#">http://ombudsman</a>
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <img src="../../images/jamiyat.svg" alt="logo">
+                    <div class="cta-card-text">
+                        <p>Jamiyatiy murqaratlar portali</p>
+                        <a href="http://monitoring.uz">http://monitoring.uz</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="cta-card">
-            <div class="cta-card-card1">
-                <img src="../../images/dawun.svg" alt="">
-                <div class="cta-card-card1-text">
-                    <p>O‘zbekiston Respublikasi Oliy <br> Majlisining Inson huquqlari bo‘yicha <br> vakili (Ombudsman)
-                    </p>
-                    <a href="#">http://ombudsman</a>
+            <div class="cta-card">
+                <div class="cta-card-inner">
+                    <img src="../../images/majlisma.svg" alt="logo">
+                    <div class="cta-card-text">
+                        <p>O'zbekiston Respublikasi Majlisma Oliy kengashi</p>
+                        <a href="http://parliament.gov.uz">http://parliament.gov.uz</a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 6,
-            loop: true,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true
-        });
-        $('.play').on('click', function () {
-            owl.trigger('play.owl.autoplay', [1000])
-        })
-        $('.stop').on('click', function () {
-            owl.trigger('stop.owl.autoplay')
-        })
-    </script>
 </section>
+
+<script>
+    $(document).ready(function () {
+    var owl = $('.ovul'); 
+    
+    owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: [
+            '<i class="fa fa-chevron-left"></i>',
+            '<i class="fa fa-chevron-right"></i>'
+        ],
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        smartSpeed: 800,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 10
+            },
+            576: {
+                items: 2,
+                margin: 15
+            },
+            768: {
+                items: 3,
+                margin: 15
+            },
+            1024: {
+                items: 4,
+                margin: 20
+            }
+        }
+    });
+});
+</script>
     <div>
         <div class="container">
             
@@ -569,28 +590,28 @@
     
     <div class="horizantal">
     <div class="horizantal-img">
-        <img src="../images/raqam.svg" alt="">
+       <i class="i-phone"></i>
         <div class="horizantal-img-text">
             <b>Telefon raqam</b>
             <p>+998 (55) 516 54 53</p>
         </div>
     </div>
     <div class="horizantal-img">
-        <img src="../images/elektronpochta.svg" alt="">
+        <i class="i-maile"></i>
         <div class="horizantal-img-text">
             <b>Elektron pochta</b>
             <p>info@mmtri.uz</p>
         </div>
     </div>
     <div class="horizantal-img">
-        <img src="../images/lokation.svg" alt="">
+        <i class="i-"></i>
         <div class="horizantal-img-text">
             <b>Manzil</b>
             <p>Olmozor tumani, Talabar ko’chasi 12-uy</p>
         </div>
     </div>
     <div class="horizantal-img">
-        <img src="../images/calendar.svg" alt="">
+        <i class="i-calendar"></i>
         <div class="horizantal-img-text">
             <b>Ish vaqti</b>
             <p>Dush - Jum 09:00 - 18:00</p>
@@ -602,7 +623,10 @@
 
         <div class="footer-item">
             <div class="footer-logo">
-                <img src="../images/footer-logo.svg" alt="">
+                <div class="footer-logo-image">
+                    <img src="../../images/logo.svg" alt="">
+                    <p>Milliy malaka <br> tizimini rivojlantirish <br> instituti</p>
+                </div>
                 <h3>Ijtimoiy tarmoqlar</h3>
                 <div class="footer-logo-links">
                     <a href="#"><i class="i-instagram"></i>Instagram</a>

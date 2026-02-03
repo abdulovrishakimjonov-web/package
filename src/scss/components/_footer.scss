@@ -18,13 +18,13 @@
     gap: 12px;
     flex: 1;
 
-    img {
-      width: 48px;
-      height: 48px;
+    i {
+      font-size: 44px;
       background-color: #e8f3ff;
       padding: 12px;
       border-radius: 10px;
       flex-shrink: 0;
+      color: #145FCB;
     }
 
     &-text {
@@ -87,9 +87,17 @@
   &-logo {
     flex: 0 0 280px;
 
-    img {
-      margin-bottom: 30px;
+  &-image {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    p {
+      font-size: 17px;
+      font-weight: 700;
+      color: #FFFFFF;
     }
+  }
 
     h3 {
       font-size: 18px;

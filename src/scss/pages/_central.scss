@@ -1,95 +1,14 @@
-.central {
-    &-card {
-    background-color: #ffffff;
-    background-image: url("../../images/tuzilmalar-img.png");
-    padding: 16px;
-    background-repeat: no-repeat;
-    background-position: right 16px center;
-    transition: background-position 0.5s ease;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    &-text {
-        p {
-        font-size: 18px;
-        color: #145fcb;
-        font-weight: 500;
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        margin-bottom: 9PX;
 
-        span {
-          width: 4px;
-          height: 24px;
-          background-color: #145fcb;
-          border-radius: 5px;
-        }
-      }
-      h3 {
-        font-size: 28px;
-        font-weight: 600;
-        color: #000000;
-        margin-bottom: 82px;
-      }
-      &-icon {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-        margin-bottom: 25px;
-        p {
-            color: #121926;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            i {
-                color: #145FCB;
-            }
-        }
-      }
-      &-parent {
-        width: 100%;
-        height: 1px;
-        border: 1px solid #E3E8EF;
-        margin-bottom: 25px;
-      }
+   .lider-img-wrapper1 {
+    position: relative;
+    width: 434px;
+    padding: 16px 0px 16px 16px;
 
-      &-btn {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        &-btn1 {
-            width: 130px;
-             border: 1px solid #145FCB;
-             border-radius: 12px;
-             color: #145FCB;
-             font-size: 16px;
-             font-weight: 600;
-             display: flex;
-             align-items: center;
-             gap: 8px;
-             justify-content: center;
-             padding: 10px;
-             background-color: #F5F9FF;
-        }
-
-        &-btn2 {
-            width: 150px;
-             border: 1px solid #145FCB;
-             border-radius: 12px;
-             color: #145FCB;
-             font-size: 16px;
-             font-weight: 600;
-             display: flex;
-             align-items: center;
-             gap: 8px;
-             justify-content: center;
-             padding: 10px;
-             background-color: #F5F9FF;
-        }
-      }
+    .lider-img-shef1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
     }
-    }
-}
+  }
+  

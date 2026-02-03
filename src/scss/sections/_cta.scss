@@ -1,31 +1,104 @@
 .cta {
     background-color: #145FCB;
-    margin-bottom: 130px;
     background-image: url("../../images/karta.png");
-    padding: 25px;
-    &-card {
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-bottom: 130px;
+
+    h2 {
+        color: #FFFFFF;
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 30px;
+        padding-left: 15px;
+    }
+
+    .ovul {
+        // Owl Carousel o'zi display va layout boshqaradi
+    }
+
+    .cta-card {
         background-color: #FFFFFF;
         border-radius: 16px;
-        width: 411px;
-        padding: 14px;
-        &-card1 {
+        padding: 20px;
+        margin: 10px; // Owl Carousel margin parametri bilan birga ishlaydi
+        height: 160px; // Barcha kartalar bir xil balandlikda
+        display: flex;
+        align-items: center;
+
+        &-inner {
             display: flex;
             gap: 15px;
-            &-text {
-                p {
-                    color: #000000;
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin-bottom: 16px;
-                }
-                a {
-                    width: 290px;
-                    color: #145FCB;
-                    background-color: #F0F6FF;
-                    padding: 7px;
-                    border-radius: 4px;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        img {
+            width: 60px !important;
+            height: 60px !important;
+            min-width: 60px; // Rasmning siqilishini oldini olish
+            object-fit: contain;
+            flex-shrink: 0; // Rasmning kichrayishini oldini olish
+        }
+
+        &-text {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 12px;
+
+            p {
+                color: #000000;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.4;
+                margin: 0;
+                display: -webkit-box;
+                -webkit-line-clamp: 2; // Maksimal 2 qator
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+
+            a {
+                display: inline-block;
+                color: #145FCB;
+                background-color: #F0F6FF;
+                padding: 8px 12px;
+                border-radius: 6px;
+                font-size: 12px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                white-space: nowrap; // Linkni bir qatorda saqlash
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                &:hover {
+                    background-color: #145FCB;
+                    color: #FFFFFF;
                 }
             }
+        }
+    }
+
+    // Responsive
+    @media (max-width: 1024px) {
+        .cta-card {
+            height: auto;
+            min-height: 140px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .cta-card {
+            margin: 5px;
+            padding: 15px;
         }
     }
 }
